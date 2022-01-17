@@ -5,15 +5,16 @@ import Form from './components/Form';
 import TodoList from './components/TodoList';
 
 function App() {
-  //USE EFFECT
-  useEffect(() => {
-    console.log('hey')
-  })
+
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
   //functions
+    //USE EFFECT
+  useEffect(() => {
+
+  }, [todos])
   const filterHandler = () => {
   switch(status){
     case 'completed':
